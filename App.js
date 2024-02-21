@@ -5,36 +5,25 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.box1} />
       <View style={styles.box2} />
-      <View style={styles.box3}>
-        <View
-          style={{
-            width: '100%',
-            height: 30,
-            backgroundColor: 'black',
-          }}
-        />
-      </View>
+      <View style={styles.box3} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
+    flex: 1,
   },
   box1: {
-    width: 150,
-    height: 150,
+    flex: 1,
     backgroundColor: 'cyan',
   },
   box2: {
-    width: '100%',
-    height: 100,
+    flex: 1,
     backgroundColor: 'magenta',
   },
   box3: {
-    width: 100,
-    height: '50%',
+    flex: 1,
     backgroundColor: 'yellow',
   },
 });
