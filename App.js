@@ -3,9 +3,9 @@ import { StyleSheet, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.box1} />
-      <View style={styles.box2} />
-      <View style={styles.box3} />
+      <View style={[styles.box, { backgroundColor: 'cyan' }]} />
+      <View style={[styles.box, { backgroundColor: 'magenta' }]} />
+      <View style={[styles.box, { backgroundColor: 'yellow' }]} />
     </View>
   );
 }
@@ -13,18 +13,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // flexDirection: 'column'
+    flexDirection: 'row',
   },
-  box1: {
-    flex: 1, // Größenverhältnisse (zwischen „Geschwistern“)
-    backgroundColor: 'cyan',
-  },
-  box2: {
-    flex: 4,
-    backgroundColor: 'magenta',
-  },
-  box3: {
-    flex: 8,
-    backgroundColor: 'yellow',
+  box: {
+    width: 100,
+    height: 100,
   },
 });
+
+// Jede View ist bereits ein FlexContainer und hat das FlexBox-Layout
+
+// FlexBox-Layout - wichtige Styling-Eigenschaften:
+
+// flexDirection legt Ausrichtung der Hauptachse fest
+// flexDirection: 'row' | 'column' | 'row-reverse' | 'column-reverse'
+// flexDirection hat 'column' als Default
