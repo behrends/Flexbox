@@ -13,17 +13,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    // flexDirection: 'column'
   },
   box1: {
-    flex: 1,
+    flex: 1, // Größenverhältnisse (zwischen „Geschwistern“)
     backgroundColor: 'cyan',
   },
   box2: {
-    flex: 1,
+    flex: 4,
     backgroundColor: 'magenta',
   },
   box3: {
-    flex: 1,
+    flex: 8,
     backgroundColor: 'yellow',
   },
 });
