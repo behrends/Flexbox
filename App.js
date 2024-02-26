@@ -4,13 +4,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={[styles.box, { backgroundColor: 'cyan' }]} />
-      <View
-        style={[
-          styles.box,
-          { alignSelf: 'flex-end', backgroundColor: 'magenta' },
-        ]}
-      />
+      <View style={[styles.box, { backgroundColor: 'magenta' }]} />
       <View style={[styles.box, { backgroundColor: 'yellow' }]} />
+      <View style={[styles.box, { backgroundColor: 'blue' }]} />
+      <View style={[styles.box, { backgroundColor: 'orange' }]} />
+      <View style={[styles.box, { backgroundColor: 'green' }]} />
     </View>
   );
 }
@@ -18,9 +16,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column', // Ausrichtung der Hauptachse
-    justifyContent: 'space-evenly', // Anordnung der Elemente auf der Hauptachse
+    flexDirection: 'row', // Ausrichtung der Hauptachse
+    justifyContent: 'center', // Anordnung der Elemente auf der Hauptachse
     alignItems: 'center', // Anordnung auf Querachse
+    flexWrap: 'wrap',
+    alignContent: 'center',
   },
   box: {
     width: 100,
@@ -48,3 +48,6 @@ const styles = StyleSheet.create({
 // Bemerkung: alignSelf wird für einzelne Komponenten deklariert
 // alignSelf: 'auto', 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'
 // alignSelf hat 'auto' als Default
+
+// flexWrap: legt Umbrüche fest (ggf. mit alignContent)
+// flexWrap: 'wrap' erzwingt Umbrüche ('nowrap' ist Default)
