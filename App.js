@@ -4,7 +4,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={[styles.box, { backgroundColor: 'cyan' }]} />
-      <View style={[styles.box, { backgroundColor: 'magenta' }]} />
+      <View
+        style={[
+          styles.box,
+          { alignSelf: 'flex-end', backgroundColor: 'magenta' },
+        ]}
+      />
       <View style={[styles.box, { backgroundColor: 'yellow' }]} />
     </View>
   );
@@ -38,3 +43,8 @@ const styles = StyleSheet.create({
 // alignItems: Anordnung auf der Querachse (senkrecht zur Hauptachse)
 // alignItems: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'
 // alignItems hat 'stretch' als Default
+
+// alignSelf: überschreibt Anordnung einzelner Komponenten (Querachse)
+// Bemerkung: alignSelf wird für einzelne Komponenten deklariert
+// alignSelf: 'auto', 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'
+// alignSelf hat 'auto' als Default
