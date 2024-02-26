@@ -13,8 +13,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row', // Ausrichtung der Hauptachse
+    flexDirection: 'column', // Ausrichtung der Hauptachse
     justifyContent: 'space-evenly', // Anordnung der Elemente auf der Hauptachse
+    alignItems: 'center', // Anordnung auf Querachse
   },
   box: {
     width: 100,
@@ -33,3 +34,7 @@ const styles = StyleSheet.create({
 // justifyContent legt Anordnung der Elemente auf der Hauptachse fest
 // justifyContent: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly'
 // justifyContent hat 'flex-start' als Default
+
+// alignItems: Anordnung auf der Querachse (senkrecht zur Hauptachse)
+// alignItems: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'
+// alignItems hat 'stretch' als Default
