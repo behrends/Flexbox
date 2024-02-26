@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     alignItems: 'center', // Anordnung auf Querachse
     flexWrap: 'wrap',
     alignContent: 'center',
+    gap: 5,
   },
   box: {
     width: 100,
@@ -51,3 +52,6 @@ const styles = StyleSheet.create({
 
 // flexWrap: legt Umbrüche fest (ggf. mit alignContent)
 // flexWrap: 'wrap' erzwingt Umbrüche ('nowrap' ist Default)
+
+// gap: legt mit Zahl Abstände zwischen Komponenten fest
+// (oder spezifischer mit columnGap und rowGap)
