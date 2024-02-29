@@ -55,3 +55,5 @@ const styles = StyleSheet.create({
 
 // gap: legt mit Zahl Abstände zwischen Komponenten fest
 // (oder spezifischer mit columnGap und rowGap)
+
+// weitere Eigenschaften: flexGrow, flexShrink, flexBasis, …
